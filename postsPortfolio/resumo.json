@@ -49,6 +49,21 @@
         "data": {}
       },
       {
+        "key": "4a4c7",
+        "text": "<img src=\"/images/vite.svg\" width=\"150\" height=\"150\" alt=\"Imagem/>",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [
+          {
+            "offset": 0,
+            "length": 66,
+            "style": "ALIGN_CENTER"
+          }
+        ],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
         "key": "ck4id",
         "text": "",
         "type": "unstyled",
