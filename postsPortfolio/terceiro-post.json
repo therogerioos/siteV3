@@ -6,7 +6,43 @@
     "blocks": [
       {
         "key": "5k1j2",
-        "text": "Este é o conteúdo do post que foi atualizado pelo Scriba v1",
+        "text": "Este é o conteúdo do post que foi atualizado pelo Scriba v1.",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "9fne4",
+        "text": "Exemplo de SQL Server:",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "26ma9",
+        "text": "SELECT * FROM TB_FATURAS\nWHERE ID = 10;",
+        "type": "code-block",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "2qoa9",
+        "text": "",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "7rham",
+        "text": "SS",
         "type": "unstyled",
         "depth": 0,
         "inlineStyleRanges": [],
