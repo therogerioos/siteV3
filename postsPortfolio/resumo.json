@@ -24,10 +24,16 @@
       },
       {
         "key": "20v2r",
-        "text": "Este é o segundo paragrafo criado no Draf.js",
+        "text": "Este é o segundo paragrafo criado no Draf.js, a biblioteca criada para criação de texto.",
         "type": "unstyled",
         "depth": 0,
-        "inlineStyleRanges": [],
+        "inlineStyleRanges": [
+          {
+            "offset": 37,
+            "length": 7,
+            "style": "BOLD"
+          }
+        ],
         "entityRanges": [],
         "data": {}
       }
