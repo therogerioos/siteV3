@@ -47,6 +47,15 @@
         ],
         "entityRanges": [],
         "data": {}
+      },
+      {
+        "key": "ck4id",
+        "text": "",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
       }
     ],
     "entityMap": {}
