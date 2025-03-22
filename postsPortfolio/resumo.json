@@ -14,6 +14,11 @@
             "offset": 0,
             "length": 34,
             "style": "ALIGN_CENTER"
+          },
+          {
+            "offset": 0,
+            "length": 34,
+            "style": "JUSTIFY_CENTER"
           }
         ],
         "entityRanges": [],
@@ -64,6 +69,11 @@
             "offset": 0,
             "length": 66,
             "style": "ALIGN_CENTER"
+          },
+          {
+            "offset": 0,
+            "length": 66,
+            "style": "JUSTIFY_CENTER"
           }
         ],
         "entityRanges": [],
