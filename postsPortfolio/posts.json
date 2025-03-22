@@ -21,6 +21,87 @@
         "inlineStyleRanges": [],
         "entityRanges": [],
         "data": {}
+      },
+      {
+        "key": "49t60",
+        "text": "Irei criar uma lista não ordenada:",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "d6u7h",
+        "text": "Esse é o primeiro item ",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "40lc9",
+        "text": "Esse é o segundo item",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "8kou8",
+        "text": "Criarei uma lista ordenada:",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "3ehi4",
+        "text": "Esse é o primeiro item ordenado",
+        "type": "ordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "8jaok",
+        "text": "Esse é o segundo item ordenado",
+        "type": "ordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "74ldg",
+        "text": "Esse é um fragmento de código",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "elrdr",
+        "text": "console.log(\"Hello World\");",
+        "type": "code-block",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "6qd89",
+        "text": "São algumas aplicações do Draft.js",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
       }
     ],
     "entityMap": {}
