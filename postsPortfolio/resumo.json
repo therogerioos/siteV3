@@ -18,7 +18,18 @@
         "text": "Este é o conteúdo do segundo post que foi atualizado com Scriba v1.",
         "type": "unstyled",
         "depth": 0,
-        "inlineStyleRanges": [],
+        "inlineStyleRanges": [
+          {
+            "offset": 57,
+            "length": 9,
+            "style": "ITALIC"
+          },
+          {
+            "offset": 57,
+            "length": 9,
+            "style": "BOLD"
+          }
+        ],
         "entityRanges": [],
         "data": {}
       },
