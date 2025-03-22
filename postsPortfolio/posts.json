@@ -1,7 +1,21 @@
 {
-  "title": "Primeiro Post",
-  "author": "therogerioos",
-  "date": "2025-03-12",
-  "content": "Aqui ficarão os posts a serem carregados",
+  "title": "Primeiro Post",  // Aqui vai o título do post
+  "author": "therogerioos",  // O autor do post
+  "date": "2025-03-12",  // A data de criação
+  "content": {  // Aqui fica o conteúdo do post, seguindo a estrutura do Draft.js
+    "blocks": [
+      {
+        "key": "5k1j2",
+        "text": "Este é o conteúdo do post",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      }
+    ],
+    "entityMap": {}
+  }
 }
+
 
