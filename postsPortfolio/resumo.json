@@ -6,7 +6,16 @@
     "blocks": [
       {
         "key": "5k1j2",
-        "text": "Este é o conteúdo do segundo post que foi atualizado com Scriba v1",
+        "text": "Este é o conteúdo do segundo post que foi atualizado com Scriba v1.",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "20v2r",
+        "text": "Este é o segundo paragrafo criado no Draf.js",
         "type": "unstyled",
         "depth": 0,
         "inlineStyleRanges": [],
