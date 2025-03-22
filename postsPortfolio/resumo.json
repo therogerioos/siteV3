@@ -6,6 +6,15 @@
     "blocks": [
       {
         "key": "5k1j2",
+        "text": "Este é um H2 para pequenos títulos",
+        "type": "header-two",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "84gub",
         "text": "Este é o conteúdo do segundo post que foi atualizado com Scriba v1.",
         "type": "unstyled",
         "depth": 0,
