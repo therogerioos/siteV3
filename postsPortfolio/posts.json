@@ -1,13 +1,13 @@
 {
   "title": "Primeiro Post",
   "author": "therogerioos",
-  "date": "2025-03-12", 
-  "content": { 
+  "date": "2025-03-22",
+  "content": {
     "blocks": [
       {
         "key": "5k1j2",
         "text": "Este é o conteúdo do post",
-        "type": "unstyled",
+        "type": "BOLD",
         "depth": 0,
         "inlineStyleRanges": [],
         "entityRanges": [],
@@ -17,5 +17,3 @@
     "entityMap": {}
   }
 }
-
-
