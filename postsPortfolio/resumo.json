@@ -1,12 +1,12 @@
 {
   "title": "Segundo Post",
-  "author": "therogerioos",
-  "date": "2025-03-12", 
-  "content": { 
+  "author": "Rogerio Oliveira",
+  "date": "2025-03-22",
+  "content": {
     "blocks": [
       {
         "key": "5k1j2",
-        "text": "Este é o conteúdo do segundo post",
+        "text": "Este é o conteúdo do segundo post que foi atualizado com Scriba v1",
         "type": "unstyled",
         "depth": 0,
         "inlineStyleRanges": [],
