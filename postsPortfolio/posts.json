@@ -7,7 +7,16 @@
       {
         "key": "5k1j2",
         "text": "Este é o conteúdo do post",
-        "type": "BOLD",
+        "type": "header-one",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "1sq02",
+        "text": "Agora estou aplicando o conteúdo do post",
+        "type": "unstyled",
         "depth": 0,
         "inlineStyleRanges": [],
         "entityRanges": [],
