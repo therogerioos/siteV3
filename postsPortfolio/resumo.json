@@ -157,11 +157,6 @@
             "offset": 0,
             "length": 23,
             "style": "JUSTIFY_CENTER"
-          },
-          {
-            "offset": 0,
-            "length": 23,
-            "style": "LINK"
           }
         ],
         "entityRanges": [],
