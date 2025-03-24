@@ -30,7 +30,7 @@ const Tutorial: React.FC = () => {
     // Função para buscar o arquivo index.json
     const fetchPosts = async () => {
       try {
-        const response = await fetch('/src/tutorial/index.json');
+        const response = await fetch('/index/tutorial/index.json');
         if (!response.ok) {
           throw new Error('Erro ao carregar os posts');
         }

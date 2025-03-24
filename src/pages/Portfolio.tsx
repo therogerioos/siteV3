@@ -30,7 +30,7 @@ const Portfolio: React.FC = () => {
     // Função para buscar o arquivo index.json
     const fetchPosts = async () => {
       try {
-        const response = await fetch('/src/portfolio/index.json');
+        const response = await fetch('/index/portfolio/index.json');
         if (!response.ok) {
           throw new Error('Erro ao carregar os posts');
         }
