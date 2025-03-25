@@ -3,7 +3,7 @@
       "id": "1",
       "title": "Projeto do meu site",
       "resume": "Descrição do projeto do meu site portfólio.",
-      "file": "projeto-site.json",
+      "file": "projeto-site",
       "image": "tela_therogerioos.png",
       "tecnologia": ["React", "Vite", "Typescript", "Git Hub Pages", "JSON"]
     }
