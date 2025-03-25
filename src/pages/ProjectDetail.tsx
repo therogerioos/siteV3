@@ -2,7 +2,6 @@
 // src/pages/ProjectDetail.tsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import portfolio from "../portfolio/index.json";
 import RenderBlock from "../components/TradutorJSON";
 
 interface Post {
@@ -29,6 +28,7 @@ interface Block {
 
 
 const ProjectDetail: React.FC = () => {
+  const [portfolio, setPortfolio] = useState<{ file: string }[]>([]);
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -39,6 +39,23 @@ const ProjectDetail: React.FC = () => {
 
   const myId = id || "";
   const nameBeforeDot = myId.split(".")[0];
+
+  useEffect(() => {
+    const fetchPortfolio = async () => {
+      try {
+        const response = await fetch("/index/portfolio/index.json");
+        if (!response.ok) throw new Error("Erro ao carregar portfolio");
+        const data = await response.json();
+        setPortfolio(data);
+      } catch (error) {
+        setError("Erro ao carregar portfolio: " + error);
+        setLoading(false);
+      }
+    };
+
+    fetchPortfolio();
+  }, []);
+
   const project = portfolio.find((p) => p.file === nameBeforeDot);
 
   useEffect(() => {
@@ -54,7 +71,6 @@ const ProjectDetail: React.FC = () => {
           throw new Error("Erro ao carregar os posts");
         }
         const data = await response.json();
-        console.log("Resposta da API:", data); // Verifique os dados recebidos
 
         if (data) {
           setPosts([data]); // Transforma o objeto em um array com um único item

@@ -2,7 +2,6 @@
 // src/pages/TutorialDetail.tsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import tutorial from "../tutorial/index.json";
 import RenderBlock from "../components/TradutorJSON";
 
 interface Post {
@@ -28,6 +27,7 @@ interface Block {
 }
 
 const TutorialDetail: React.FC = () => {
+  const [tutorial, setTutorial] = useState<{ file: string }[]>([]);
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -38,6 +38,23 @@ const TutorialDetail: React.FC = () => {
 
   const myId = id || "";
   const nameBeforeDot = myId.split(".")[0];
+
+    useEffect(() => {
+      const fetchTutorial = async () => {
+        try {
+          const response = await fetch("/index/tutorial/index.json");
+          if (!response.ok) throw new Error("Erro ao carregar tutorial");
+          const data = await response.json();
+          setTutorial(data);
+        } catch (error) {
+          setError("Erro ao carregar tutorial: " + error);
+          setLoading(false);
+        }
+      };
+  
+      fetchTutorial();
+    }, []);
+
   const project = tutorial.find((p) => p.file === nameBeforeDot);
 
   useEffect(() => {
@@ -53,7 +70,6 @@ const TutorialDetail: React.FC = () => {
           throw new Error("Erro ao carregar os posts");
         }
         const data = await response.json();
-        console.log("Resposta da API:", data); // Verifique os dados recebidos
 
         if (data) {
           setPosts([data]); // Transforma o objeto em um array com um único item

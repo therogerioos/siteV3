@@ -7,19 +7,19 @@ function CardHome() {
   const [collection] = useState([
     {
       pagina: "Portfólio",
-      caminho: "/portfolio",
+      caminho: "#/portfolio",
       conteudo:
         "Esse é o espaço onde ficará todo o meu talento, habilidades e desenvolvimento profissional. Não pense que estou parado no meio do Rogerioverso, pois, estou vivendo em expansão para o infinito e além!!!",
     },
     {
       pagina: "Tutoriais",
-      caminho: "/tutorial",
+      caminho: "#/tutorial",
       conteudo:
         "Conhecimento nunca deverá ficar privado, seria muito egoísmo. Por isso, criei essa seção para demonstrar de forma minuciosa diversos tutoriais que ajudarão aos pequenos gafanhotos que estão viajando pela Rogerioverso.",
     },
     {
       pagina: "Currículo",
-      caminho: "/resume",
+      caminho: "#/resume",
       conteudo:
         "Nunca deveremos abandonar o tradicional, mas evolução é necessária. Por isso, coloquei o meu currículo em versão web, para que algum mestre Jedi possa me recrutar para seu time.",
     },

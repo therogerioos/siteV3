@@ -17,11 +17,11 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Acesso Rápido</h3>
             <ul className="space-y-2 text-gray-400">
-                <li><a href="/" className="hover:text-white">Início</a></li>
-                <li><a href="/portfolio" className="hover:text-white">Portfólio</a></li>
-                <li><a href="/tutorial" className="hover:text-white">Tutoriais</a></li>
-                <li><a href="/resume" className="hover:text-white">Currículo</a></li>
-                <li><a href="/about" className="hover:text-white">Sobre mim</a></li>
+                <li><a href="#/" className="hover:text-white">Início</a></li>
+                <li><a href="#/portfolio" className="hover:text-white">Portfólio</a></li>
+                <li><a href="#/tutorial" className="hover:text-white">Tutoriais</a></li>
+                <li><a href="#/resume" className="hover:text-white">Currículo</a></li>
+                <li><a href="#/about" className="hover:text-white">Sobre mim</a></li>
             </ul>
           </div>
           
