@@ -1,11 +1,11 @@
 [
-    {
-      "id": "1",
-      "title": "Projeto do meu site",
-      "resume": "Descrição do projeto do meu site portfólio.",
-      "file": "projeto-site",
-      "image": "tela_therogerioos.png",
-      "tecnologia": ["React", "Vite", "Typescript", "Git Hub Pages", "JSON"]
-    }
+  {
+    "id": "1",
+    "title": "Meu post",
+    "resume": "Meu post",
+    "file": "projeto-site",
+    "image": "",
+    "tecnologia": []
+  }
 
-  ]
+]
