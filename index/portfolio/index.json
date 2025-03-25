@@ -1,11 +1,11 @@
 [
   {
     "id": "1",
-    "title": "Meu post",
-    "resume": "Meu post",
+    "title": "Projeto: Site da THEROGERIOOS",
+    "resume": "Descrição do desenvolvimento do site: www.therogerioos.com.br",
     "file": "projeto-site",
-    "image": "",
-    "tecnologia": []
+    "image": "tela_therogerioos.png",
+    "tecnologia": ["React", "Tailwind", "Vite", "Typescript"]
   }
 
 ]
