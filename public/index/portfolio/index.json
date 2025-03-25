@@ -1,11 +1,7 @@
 [
   {
     "id": "1",
-<<<<<<< HEAD
     "title": "Projeto: Site portfólio",
-=======
-    "title": "Projeto: Site da THEROGERIOOS",
->>>>>>> 8f0ecafcc055eb890e2efa34f6be0dbea92d453d
     "resume": "Descrição do desenvolvimento do site: www.therogerioos.com.br",
     "file": "projeto-site",
     "image": "tela_therogerioos.png",
@@ -21,8 +17,4 @@
     "tecnologia": ["React", "Tailwind", "Vite", "Typescript", "Tauri", "Rust", "SQL Lite", "Firebase"]
   }
 
-<<<<<<< HEAD
 ]
-=======
-]
->>>>>>> 8f0ecafcc055eb890e2efa34f6be0dbea92d453d
