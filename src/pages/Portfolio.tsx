@@ -6,6 +6,7 @@ import "animate.css";
 import NotFound404 from "../components/NotFound404";
 import { TextField } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import LoadingScreen from "../components/Loading";
 
 
 interface Post {
@@ -65,7 +66,7 @@ const Portfolio: React.FC = () => {
   }, [busca, posts]);
 
   if (loading) {
-    return <div>Carregando...</div>;
+    return <LoadingScreen/>;
   }
 
   if (error) {

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RenderBlock from "../components/TradutorJSON";
+import LoadingScreen from "../components/Loading";
 
 interface Post {
   title: string;
@@ -92,7 +93,7 @@ const ProjectDetail: React.FC = () => {
   }, [project]);
 
   // Renderização condicional
-  if (loading) return <div>Carregando...</div>;
+  if (loading) return <LoadingScreen/>;
   if (error) return <div>Erro: {error}</div>;
   if (!project) return <div>Projeto não encontrado</div>;
 
