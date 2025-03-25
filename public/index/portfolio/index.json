@@ -1,24 +1,20 @@
 [
-<<<<<<< HEAD
   {
     "id": "1",
-    "title": "Meu post",
-    "resume": "Meu post",
+    "title": "Projeto: Site portfólio",
+    "resume": "Descrição do desenvolvimento do site: www.therogerioos.com.br",
     "file": "projeto-site",
-    "image": "",
-    "tecnologia": []
+    "image": "tela_therogerioos.png",
+    "tecnologia": ["React", "Tailwind", "Vite", "Typescript"]
+  },
+
+  {
+    "id": "2",
+    "title": "Projeto: Sheets",
+    "resume": "Descrição do desenvolvimento do software Sheets",
+    "file": "projeto-sheets",
+    "image": "tela_login_sheets_corrigido.png",
+    "tecnologia": ["React", "Tailwind", "Vite", "Typescript", "Tauri", "Rust", "SQL Lite", "Firebase"]
   }
 
 ]
-=======
-    {
-      "id": "1",
-      "title": "Projeto: Site da THEROGERIOOS",
-      "resume": "Descrição sobre o desenvolvimento do site da THEROGERIOOS",
-      "file": "projeto-site-therogerioos",
-      "image": "tela_therogerioos.png",
-      "tecnologia": ["React", "Tailwind", "Typescript", "Vite"]
-    }
-
-  ]
->>>>>>> e54439bdaf99fd1317eb85fd783350689deb49ac
