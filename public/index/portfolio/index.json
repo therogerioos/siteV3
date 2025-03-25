@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
   {
     "id": "1",
     "title": "Meu post",
@@ -9,3 +10,15 @@
   }
 
 ]
+=======
+    {
+      "id": "1",
+      "title": "Projeto: Site da THEROGERIOOS",
+      "resume": "Descrição sobre o desenvolvimento do site da THEROGERIOOS",
+      "file": "projeto-site-therogerioos",
+      "image": "tela_therogerioos.png",
+      "tecnologia": ["React", "Tailwind", "Typescript", "Vite"]
+    }
+
+  ]
+>>>>>>> e54439bdaf99fd1317eb85fd783350689deb49ac
