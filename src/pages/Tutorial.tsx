@@ -7,7 +7,7 @@ import NotFound404 from "../components/NotFound404";
 import { TextField } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import LoadingScreen from "../components/Loading";
-
+import { motion } from "framer-motion";
 
 interface Post {
   id: string;
@@ -31,9 +31,9 @@ const Tutorial: React.FC = () => {
     // Função para buscar o arquivo index.json
     const fetchPosts = async () => {
       try {
-        const response = await fetch('/index/tutorial/index.json');
+        const response = await fetch("/index/tutorial/index.json");
         if (!response.ok) {
-          throw new Error('Erro ao carregar os posts');
+          throw new Error("Erro ao carregar os posts");
         }
         const data: Post[] = await response.json();
         setPosts(data);
@@ -42,7 +42,7 @@ const Tutorial: React.FC = () => {
         if (error instanceof Error) {
           setError(error.message);
         } else {
-          setError('Erro desconhecido');
+          setError("Erro desconhecido");
         }
       } finally {
         setLoading(false);
@@ -57,20 +57,27 @@ const Tutorial: React.FC = () => {
       setResultados(posts); // Se o campo de busca estiver vazio, mostra todos os posts
     } else {
       setResultados(
-        posts.filter(post =>
-          post.title.toLowerCase().includes(busca.toLowerCase()) ||
-          post.tecnologia.some(tec => tec.toLowerCase().includes(busca.toLowerCase()))
+        posts.filter(
+          (post) =>
+            post.title.toLowerCase().includes(busca.toLowerCase()) ||
+            post.tecnologia.some((tec) =>
+              tec.toLowerCase().includes(busca.toLowerCase())
+            )
         )
       );
     }
   }, [busca, posts]);
 
   if (loading) {
-    return <LoadingScreen/>;
+    return <LoadingScreen />;
   }
 
   if (error) {
-    return <div className="bg-gray-200 w-[100%]"><NotFound404/></div>;
+    return (
+      <div className="bg-gray-200 w-[100%]">
+        <NotFound404 />
+      </div>
+    );
   }
 
   // Função para mudar a página
@@ -110,7 +117,7 @@ const Tutorial: React.FC = () => {
             backgroundColor: "#181C23",
             borderRadius: "4px",
             "& .MuiOutlinedInput-root": {
-              '&::placeholder': {
+              "&::placeholder": {
                 color: "#fff",
               },
               "& fieldset": {
@@ -180,80 +187,85 @@ const Tutorial: React.FC = () => {
       },
     },
   });
-  
 
   return (
     <div className="p-10">
-<ThemeProvider theme={theme}>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "10px",
-          flexWrap: "wrap",
-          marginBottom: "1rem",
-        }}
-      >
-        <TextField
-          label="Pesquisar"
-          variant="outlined"
-          size="small"
-          color="primary"
-          value={busca}
-          onChange={(e) => setBusca(e.target.value)}
-          focused
-          sx={{
-            width: "50%",
-            input: {
-              color: "white", // Cor do texto digitado
-              "&::placeholder": {
-                color: "#fff", // Cor do placeholder com transparência
-                opacity: 1, // Garante que a cor seja aplicada corretamente no MUI
-              },
-            }
+      <ThemeProvider theme={theme}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: "10px",
+            flexWrap: "wrap",
+            marginBottom: "1rem",
           }}
-        />
-
-      </div>
-      
-      <div className="flex items-center justify-center flex-wrap gap-4">
-        {currentProjects.map((project) => (
-          <div
-            key={project.id}
-            className="bg-[#181C23] m-5 min-w-[95%] sm:min-w-[500px] rounded-lg shadow-xl overflow-hidden transition-transform transform hover:scale-101 animate__animated animate__zoomIn"
-          >
-            <img
-              src={`/images/${project.image}`}
-              alt={project.title}
-              className="w-full h-45 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold text-white mb-4">
-                {project.title}
-              </h3>
-              <p className="text-gray-300 mb-6">{project.resume}</p>
-              <Link
-                to={`/tutorial/${project.file}`}
-                className="text-blue-300 hover:text-blue-100 font-semibold"
-              >
-                Ver Detalhes
-              </Link>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center mb-3 mt-6">
-        <Stack spacing={2}>
-          <Pagination
-            count={Math.ceil(resultados.length / projectsPerPage)} // Total de páginas
-            page={currentPage} // Página atual
-            onChange={handlePageChange} // Função chamada quando muda a página
+        >
+          <TextField
+            label="Pesquisar"
             variant="outlined"
-            shape="rounded"
+            size="small"
+            color="primary"
+            value={busca}
+            onChange={(e) => setBusca(e.target.value)}
+            focused
+            sx={{
+              width: "50%",
+              input: {
+                color: "white", // Cor do texto digitado
+                "&::placeholder": {
+                  color: "#fff", // Cor do placeholder com transparência
+                  opacity: 1, // Garante que a cor seja aplicada corretamente no MUI
+                },
+              },
+            }}
           />
-        </Stack>
-      </div>
+        </div>
+
+        <div className="flex items-center justify-center flex-wrap gap-4">
+          {currentProjects.map((project, index) => (
+            <motion.div
+            key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: index * 0.09 }}
+            >
+              <div
+                key={project.id}
+                className="bg-[#181C23] m-5 min-w-[95%] sm:min-w-[500px] rounded-lg shadow-xl overflow-hidden transition-transform transform hover:scale-101"
+              >
+                <img
+                  src={`/images/${project.image}`}
+                  alt={project.title}
+                  className="w-full h-45 object-cover"
+                />
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold text-white mb-4">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-300 mb-6">{project.resume}</p>
+                  <Link
+                    to={`/tutorial/${project.file}`}
+                    className="text-blue-300 hover:text-blue-100 font-semibold"
+                  >
+                    Ver Detalhes
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        <div className="flex justify-center mb-3 mt-6">
+          <Stack spacing={2}>
+            <Pagination
+              count={Math.ceil(resultados.length / projectsPerPage)} // Total de páginas
+              page={currentPage} // Página atual
+              onChange={handlePageChange} // Função chamada quando muda a página
+              variant="outlined"
+              shape="rounded"
+            />
+          </Stack>
+        </div>
       </ThemeProvider>
     </div>
   );

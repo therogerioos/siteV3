@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RenderBlock from "../components/TradutorJSON";
 import LoadingScreen from "../components/Loading";
+import { motion } from "framer-motion";
 
 interface Post {
   title: string;
@@ -40,21 +41,21 @@ const TutorialDetail: React.FC = () => {
   const myId = id || "";
   const nameBeforeDot = myId.split(".")[0];
 
-    useEffect(() => {
-      const fetchTutorial = async () => {
-        try {
-          const response = await fetch("/index/tutorial/index.json");
-          if (!response.ok) throw new Error("Erro ao carregar tutorial");
-          const data = await response.json();
-          setTutorial(data);
-        } catch (error) {
-          setError("Erro ao carregar tutorial: " + error);
-          setLoading(false);
-        }
-      };
-  
-      fetchTutorial();
-    }, []);
+  useEffect(() => {
+    const fetchTutorial = async () => {
+      try {
+        const response = await fetch("/index/tutorial/index.json");
+        if (!response.ok) throw new Error("Erro ao carregar tutorial");
+        const data = await response.json();
+        setTutorial(data);
+      } catch (error) {
+        setError("Erro ao carregar tutorial: " + error);
+        setLoading(false);
+      }
+    };
+
+    fetchTutorial();
+  }, []);
 
   const project = tutorial.find((p) => p.file === nameBeforeDot);
 
@@ -92,7 +93,7 @@ const TutorialDetail: React.FC = () => {
   }, [project]);
 
   // Renderização condicional
-  if (loading) return <LoadingScreen/>;
+  if (loading) return <LoadingScreen />;
   if (error) return <div>Erro: {error}</div>;
   if (!project) return <div>Projeto não encontrado</div>;
 
@@ -107,31 +108,50 @@ const TutorialDetail: React.FC = () => {
   };
 
   return (
+        <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, delay: 0.03 }}
+      >
     <div className="lg:pt-10 lg:pb-10 text-gray-300">
       <div className="flex flex-col pt-10 pb-10 lg:p-10 items-center bg-gray-700 bg-cover bg-center lg:rounded-lg shadow-2xl max-w-3xl mx-auto">
         {posts.length > 0 ? (
           <>
             <div className="flex flex-col">
-              <h1 className="flex justify-center items-start text-3xl font-bold text-gray-300">
-                {postTitle}
-              </h1>
-              <p className="flex justify-center items-start p-6 text-gray-300">
-                Postado: {formatarData(postDate)} por {postAutor}
-              </p>
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, delay: 0.03 }}
+              >
+                <h1 className="flex justify-center items-start text-3xl font-bold text-gray-300">
+                  {postTitle}
+                </h1>
+                <p className="flex justify-center items-start p-6 text-gray-300">
+                  Postado: {formatarData(postDate)} por {postAutor}
+                </p>
+              </motion.div>
             </div>
             <div className="prose pl-10 pr-10 flex flex-col">
-          {posts[0].content.blocks.map((block, index) => (
-            <div key={index}>
-              <RenderBlock block={block} />
+              {posts[0].content.blocks.map((block, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.9, delay: index * 0.09 }}
+                >
+                  <div key={index}>
+                    <RenderBlock block={block} />
+                  </div>
+                </motion.div>
+              ))}
             </div>
-          ))}
-        </div>
           </>
         ) : (
           <div>Nenhum post encontrado.</div>
         )}
       </div>
     </div>
+    </motion.div>
   );
 };
 

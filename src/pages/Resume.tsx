@@ -1,8 +1,14 @@
 // src/pages/Resume.tsx
+import { motion } from "framer-motion";
 import React from "react";
 
 const Resume: React.FC = () => {
   return (
+    <motion.div
+    initial={{ opacity: 0, y: 40 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.9, delay: 0.03 }}
+  >
     <div className="lg:pt-10 lg:pb-10 text-gray-300">
       <div className="max-w-3xl mx-auto p-6 bg-gray-700 text-white rounded-lg shadow-lg">
         {/* Header */}
@@ -125,6 +131,7 @@ const Resume: React.FC = () => {
         </section>
       </div>
     </div>
+    </motion.div>
   );
 };
 

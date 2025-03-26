@@ -6,7 +6,7 @@ import HomepageSlider from "../components/HomepageSlider";
 import CardHome from "../components/CardHome";
 import CardHomeAbout from "../components/CardHomeAbout";
 import SetaScroll from "../components/SetaScroll";
-
+import { motion } from "framer-motion";
 
 const Home: React.FC = () => {
   return (
@@ -30,17 +30,28 @@ const Home: React.FC = () => {
             className="absolute top-2 bottom-0 w-80 h-80 animate__animated animate__slideInUp"
           />
         </div>
-        
       </div>
-      <SetaScroll/>
+      <SetaScroll />
       <div className="flex items-center justify-center flex-col">
-        <HomepageSlider />
+          <HomepageSlider />
       </div>
       <div className="flex items-center justify-center flex-col ">
+      <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
         <CardHome />
+        </motion.div>
       </div>
       <div className="flex items-center justify-center flex-col ">
+      <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
         <CardHomeAbout />
+        </motion.div>
       </div>
     </>
   );
