@@ -13,6 +13,7 @@ interface Post {
   id: string;
   title: string;
   resume: string;
+  statusPosts: string;
   image: string;
   file: string;
   tecnologia: string[];
@@ -36,8 +37,10 @@ const Tutorial: React.FC = () => {
           throw new Error("Erro ao carregar os posts");
         }
         const data: Post[] = await response.json();
-        setPosts(data);
-        setResultados(data);
+        const postsPublicados = data.filter(post => post.statusPosts === "Publicado");
+
+        setPosts(postsPublicados);
+        setResultados(postsPublicados);
       } catch (error) {
         if (error instanceof Error) {
           setError(error.message);

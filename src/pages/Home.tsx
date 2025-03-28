@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           <img
             src={avatarSorrindo}
             alt="Imagem recortada"
-            className="absolute top-2 bottom-0 w-80 h-80 animate__animated animate__slideInUp"
+            className="absolute top-2 bottom-0 w-100 h-100 animate__animated animate__slideInUp"
           />
         </div>
       </div>
