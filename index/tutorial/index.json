@@ -1,12 +1,11 @@
 [
     {
-      "id": "",
-      "title": "",
+        "id": "",
+        "title": "",
         "statusPosts": "",
-      "resume": "",
-      "file": "",
-      "image": "",
-      "tecnologia": [""]
+        "resume": "",
+        "file": "",
+        "image": "",
+        "tecnologia": [""]
     }
-
-  ]
+]
