@@ -3,6 +3,8 @@
       "id": "1",
       "title": "Projeto: Site portfólio",
       "resume": "Descrição do desenvolvimento do site: www.therogerioos.com.br",
+      "statusPosts": "Publicado",
+      "data": "2025-03-12",
       "file": "projeto-site",
       "image": "tela_therogerioos.png",
       "tecnologia": [
@@ -16,6 +18,8 @@
       "id": "2",
       "title": "Projeto: Sheets",
       "resume": "Descrição do desenvolvimento do software Sheets",
+      "statusPosts": "Publicado",
+      "data": "2025-03-12",
       "file": "projeto-sheets",
       "image": "tela_login_sheets_corrigido.png",
       "tecnologia": [
