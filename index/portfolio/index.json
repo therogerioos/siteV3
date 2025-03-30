@@ -8,7 +8,6 @@
     "image": "tela_therogerioos.png",
     "tecnologia": ["React", "Tailwind", "Vite", "Typescript"]
   },
-
   {
     "id": "2",
     "title": "Projeto: Sheets",
@@ -18,5 +17,4 @@
     "image": "tela_login_sheets_corrigido.png",
     "tecnologia": ["React", "Tailwind", "Vite", "Typescript", "Tauri", "Rust", "SQL Lite", "Firebase"]
   }
-
 ]
