@@ -1,0 +1,280 @@
+{
+    "title": "Introdução ao CSS",
+    "author": "Rogerio Oliveira",
+    "date": "2025-07-26",
+    "content": {
+      "blocks": [
+        {
+          "key": "1",
+          "text": "Introdução",
+          "type": "header-two",
+          "depth": 0,
+          "inlineStyleRanges": [],
+          "entityRanges": [],
+          "data": {}
+        },
+      {
+        "key": "2",
+        "text": "Se você está começando no desenvolvimento web e quer dar o próximo passo após aprender HTML, o CSS é o seu novo melhor amigo! É graças a ele que os sites ganham cor, estilo, harmonia e deixam de parecer uma simples página em preto e branco.",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "3",
+        "text": "Neste post, você vai entender o que é CSS, como ele funciona e por que ele é essencial na construção de páginas modernas. Vamos lá?",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "4",
+        "text": "O que é CSS?",
+        "type": "header-two",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "5",
+        "text": "CSS é a sigla para \"Cascading Style Sheets\", ou \"Folhas de Estilo em Cascata\". Ele é usado para estilizar elementos HTML, controlando desde as cores e fontes até o espaçamento entre blocos, layout da página e até mesmo animações.",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "6",
+        "text": "Em resumo, o HTML estrutura o conteúdo, enquanto o CSS cuida da aparência.",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "7",
+        "text": "Por que usar CSS?",
+        "type": "header-two",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "8",
+        "text": "Você poderia aplicar estilos diretamente no HTML, mas isso rapidamente vira uma bagunça. O CSS oferece várias vantagens:",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "9",
+        "text": "Separação de conteúdo e estilo: seu HTML fica limpo e mais fácil de manter.",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "10",
+        "text": "Reutilização de estilos: você pode aplicar o mesmo estilo em várias páginas.",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "11",
+        "text": "Facilidade de manutenção: mudar uma cor ou fonte em todo o site com uma única edição.",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "12",
+        "text": "Design mais profissional: com CSS, você tem controle total sobre o visual do seu site.",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "13",
+        "text": "Como o CSS funciona na prática?",
+        "type": "header-two",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "14",
+        "text": "Existem três formas de aplicar CSS em uma página:",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "15",
+        "text": "1. Inline (dentro do próprio elemento HTML):",
+        "type": "header-three",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "16",
+        "text": "<p style=\"color: blue;\">Texto azul</p>",
+        "type": "code-block",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "17",
+        "text": "2. Interno (dentro da tag \"style\" no \"head\" do HTML):",
+        "type": "header-three",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "18",
+        "text": "<style>\n p {\n    color: green;\n   }\n</style>",
+        "type": "code-block",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "19",
+        "text": "3. Externo (em um arquivo \".css\" separado):",
+        "type": "header-three",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "20",
+        "text": "<!-- index.html -->\n<link rel=\"stylesheet\" href=\"style.css\">\n<p class=\"destaque\">Olá, CSS!</p>",
+        "type": "code-block",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "21",
+        "text": "/* style.css */\n.destaque {\n  color: blue;\n  font-weight: bold;\n}",
+        "type": "code-block",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "22",
+        "text": "Principais propriedades do CSS para iniciantes",
+        "type": "header-two",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "23",
+        "text": "Aqui estão algumas propriedades que você vai usar com frequência:",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "24",
+        "type": "table-insert",
+        "text": "<table class=\"table-auto border-collapse border border-gray-400 w-full text-left text-lg\">\n  <thead>\n    <tr class=\"bg-gray-100\">\n      <th class=\"border border-gray-400 px-4 py-2\">Propriedade</th>\n      <th class=\"border border-gray-400 px-4 py-2\">Função</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"border border-gray-400 px-4 py-2\"><code>color</code></td>\n      <td class=\"border border-gray-400 px-4 py-2\">Define a cor do texto</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-400 px-4 py-2\"><code>background-color</code></td>\n      <td class=\"border border-gray-400 px-4 py-2\">Define a cor de fundo</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-400 px-4 py-2\"><code>font-size</code></td>\n      <td class=\"border border-gray-400 px-4 py-2\">Define o tamanho da fonte</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-400 px-4 py-2\"><code>margin</code></td>\n      <td class=\"border border-gray-400 px-4 py-2\">Espaço externo (fora da borda)</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-400 px-4 py-2\"><code>padding</code></td>\n      <td class=\"border border-gray-400 px-4 py-2\">Espaço interno (dentro da borda)</td>\n    </tr>\n    <tr>\n      <td class=\"border border-gray-400 px-4 py-2\"><code>border</code></td>\n      <td class=\"border border-gray-400 px-4 py-2\">Adiciona borda ao elemento</td>\n    </tr>\n  </tbody>\n</table>",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": { }
+      },
+      {
+        "key": "25",
+        "text": "Dicas para quem está começando",
+        "type": "header-two",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "26",
+        "text": "Use plataformas como CodePen, JSFiddle ou PlayCode para testar seu código em tempo real.",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "27",
+        "text": "Crie mini-projetos como cartões de perfil, páginas de apresentação ou menus responsivos.",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "28",
+        "text": "Aprenda aos poucos: entenda bem o básico antes de ir para temas avançados como Flexbox ou Grid Layout.",
+        "type": "unordered-list-item",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "29",
+        "text": "Conclusão",
+        "type": "header-two",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      },
+      {
+        "key": "30",
+        "text": "CSS é uma das ferramentas fundamentais para quem quer trabalhar com web. Com ele, suas páginas ganham vida e identidade visual. Aprender CSS é o passo natural depois do HTML e abre caminho para frameworks como Bootstrap, Tailwind e até mesmo animações com JavaScript.",
+        "type": "unstyled",
+        "depth": 0,
+        "inlineStyleRanges": [],
+        "entityRanges": [],
+        "data": {}
+      }
+      ],
+      "entityMap": {}
+    }
+  }
